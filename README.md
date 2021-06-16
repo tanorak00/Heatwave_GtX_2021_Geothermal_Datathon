@@ -13,8 +13,8 @@ Flowrate Capacity: Flowrate determines the amount of fluid that can flow natural
 There is the belief that old (or current) oil and gas wells can be re-purposed for geothermal energy use, using the subsurface infrastructure already in place plus the data already collected during the life of the well.
 
 We are provided with relevant well data from 2 Oil & Gas basins: 
-•	Duvernay in Alberta, Canada
-•	Eaglebine in Texas, USA 
+-	Duvernay in Alberta, Canada
+-	Eaglebine in Texas, USA 
 
 The information includes;
 •	Well logs in LAS format
