@@ -1,4 +1,4 @@
-###Background Information
+### Background Information
 What is geothermal energy? Geothermal is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. 
 Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F). The high temperature and pressure in Earth's interior cause some rock to melt and solid mantle to behave plastically, resulting in parts of the mantle convecting upward since it is lighter than the surrounding rock. Rock and water is heated in the crust, sometimes up to 370 °C (700 °F).
 What is geothermal used for? For centuries, geothermal springs have been used for bathing, heating and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with huge potential. Geothermal energy is now used to produce electricity, to heat and cool buildings as well as for other industrial purposes like fruit and vegetable cultivation. 
