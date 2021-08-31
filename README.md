@@ -1,43 +1,41 @@
-### Background Information
-What is geothermal energy? Geothermal is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. 
-Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F). The high temperature and pressure in Earth's interior cause some rock to melt and solid mantle to behave plastically, resulting in parts of the mantle convecting upward since it is lighter than the surrounding rock. Rock and water is heated in the crust, sometimes up to 370 °C (700 °F).
-What is geothermal used for? For centuries, geothermal springs have been used for bathing, heating and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with huge potential. Geothermal energy is now used to produce electricity, to heat and cool buildings as well as for other industrial purposes like fruit and vegetable cultivation. 
-Reference: https://en.wikipedia.org/wiki/Geothermal_energy, https://www.geothermal-energy.org/explore/what-is-geothermal/
+### Geothermal Energy
+Geothermal is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
+For centuries, geothermal springs have been used for bathing, heating, and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with enormous potential. Geothermal energy is now used to produce electricity (Figure 1), heat and cool buildings as well as other industrial purposes like fruit and vegetable cultivation (Figure 2).  
+Geothermal power (electrical power generated from geothermal energy) is considered a sustainable and renewable source of energy because the heat extraction is minor compared with the earth's heat content. Internal thermal energy from the earth flows to the surface by conduction at a rate of 44.2 terawatts (TW) and is replenished by radioactive decay of minerals at a rate of 30 TW. Compared to the world’s total energy consumption of 13 TWY, geothermal power could supply the world’s energy needs however, most of this energy flow is not recoverable 
+Technologies to extract geothermal power include (Figure 1): 
+  * **Dry steam plants:** Use steam directly from a geothermal reservoir to turn generator turbines. 
+  * **Flash steam plants:** Take high-pressure hot water from deep inside the earth and convert it to steam to drive generator turbines. When the steam cools, it condenses to water and is injected back into the ground to be used again. 
+  * **Binary cycle plants:** Transfer the heat from geothermal hot water to another liquid. The heat causes the second liquid to turn to steam, which is used to drive a generator turbine. 
 
 
-**Problem Statement**
-2 parameters are important in the evaluation of geothermal potential. 
-Formation Temperature: The higher the temperature at bottom, the higher the potential for Geothermal use. Despite the abundance of techniques for collecting drilling and well operation data, they do not necessarily provide the real Bottom Hole Temperature (BHT). 
-Flowrate Capacity: Flowrate determines the amount of fluid that can flow naturally or be pumped through the formation or pipe. Higher permeability formations or larger diameter pipe are more viable for Geothermal purposes.
+######Figure 1:  Three types of geothermal power technologies (reference#4) 
 
-There is the belief that old (or current) oil and gas wells can be re-purposed for geothermal energy use, using the subsurface infrastructure already in place plus the data already collected during the life of the well.
-
-We are provided with relevant well data from 2 Oil & Gas basins: 
--	Duvernay in Alberta, Canada
--	Eaglebine in Texas, USA 
-
-The information includes;
--	Well logs in LAS format
--	Well header, drilling, completion and production data
--	BHT and DST Temperature measurements
--	Calculated synthetic true temperature
-
-The goal of this project is to evaluate what wells are showing geothermal potential and based on those, which areas deserve further evaluation.  The goal of this notebook is to develop a machine learning model to predict the real bottom hole temperature and determine a subset of available wells showing the most potential for geothermal energy use.  
+All these methods require that multiple boreholes be drilled into the earth to access the heat reservoir. A power plant must have production wells to bring the hot fluid (steam or hot water) to the surface and injection wells to pump the liquid back into the reservoir after it has passed through the power plant. Capital costs are significant with drilling costs accounting for over half the costs. In total, electrical plant construction and well drilling cost about $2.5–6 million USD per MW of electrical capacity. For lower temperatures, geothermal energy can range from residential heat/cooling to industrial processes (Figure 2) 
 
 
+######Figure 2:  Geothermal energy uses (from Joseph Battir, GTX2021 presentation) 
 
+With drilling costs being such a factor, there is strong interest in oil and gas wells for re-purposing into a source of geothermal energy. The benefits are cost reduction, reducing the surface infrastructure by repurposing already existing, and conversion from high CO2 to low CO2 energy source. 
 
-We are provided with relevant well data from 2 Oil & Gas basins: 
-•	Duvernay in Alberta, Canada
-•	Eaglebine in Texas, USA 
+**References**
 
-The information includes;
-•	Well logs in LAS format
-•	Well header, drilling, completion and production data
-•	BHT and DST Temperature measurements
-•	Calculated synthetic true temperature
+### Datathon Preparation: 
+This datathon was organized to crowd source solutions to the challenge of re-purposing oil & gas wells for geothermal power. In preparation for the datathon a series of webinars were offered to help with understanding the geothermal problem and the tools necessary for a machine learning solution. These included: 
+  * Geothermal 101 
+  * Data Engineering 
+  * Using Integra cloud services for EDA and ML (2 workshops) 
+  * Machine Learning (2 workshops) 
+  * Data Modelling (2 workshops) 
+  * Neural Networks 
+  * Model Evaluation 
+  * Data Management using GIT 
+  * Data Story Telling 
 
-The goal of this project is to evaluate what wells are showing geothermal potential and based on those, which areas deserve further evaluation.  The goal of this notebook is to develop a machine learning model to predict the real bottom hole temperature and determine a subset of available wells showing the most potential for geothermal energy use.  
+### Problem Statement  
+Two parameters are important in the evaluation of geothermal potential in oil and gas wells:   
+  1. **Formation Temperature:** The higher the temperature at bottom, the higher the potential for Geothermal use. Despite the abundance of techniques for collecting drilling and well operation data, they do not necessarily provide the real Bottom Hole Temperature (BHT).  
+  2. **Flow rate:** Flow rate determines the amount of fluid that can flow naturally or be pumped through the formation or pipe. Higher permeability formations or larger diameter pipe are more viable for Geothermal purposes. 
+The challenge for this event is to predict borehole bottom hole temperatures (BHT). Models were scored using Mean Absolute Error (MAE). The second part of the challenge is to recommend what wells/areas may be suitable for geothermal power development. The predicted BHT and the provided well information will form that basis of that recommendation.  
 
 ### The Dataset 
 We were provided with relevant oil and gas well data from two basins:  Duvernay in Alberta, Canada and Eaglebine in Texas, USA. An overview of the data is provided below: 
