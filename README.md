@@ -1,3 +1,8 @@
+Table of Contents
+
+######  1. Datathon Preparation
+
+
 ### Geothermal Energy
 Geothermal is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
 For centuries, geothermal springs have been used for bathing, heating, and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with enormous potential. Geothermal energy is now used to produce electricity (Figure 1), heat and cool buildings as well as other industrial purposes like fruit and vegetable cultivation (Figure 2).  
