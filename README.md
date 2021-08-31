@@ -56,7 +56,7 @@ We were provided with relevant oil and gas well data from two basins:  Duvernay 
 <details>
   <summary>Click to expand full data dictionary</summary>
 
-Number | Basin | File name | Field name | Definition | Description
+Number | Basin | File name | Field name | Definition / Description
 ---- | ---- | ---- | ---- | ----
 1 | Duverney | Duvernay DST Pressures SPE May 2 2021 | Well ID | Unique ID of well
 2 | Duverney | Duvernay DST Pressures SPE May 2 2021 | KB Elev (m) | Kelly Bushing elevation above reference datum (ground or mean sea level)
