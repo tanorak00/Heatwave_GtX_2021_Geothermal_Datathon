@@ -41,20 +41,21 @@ The goal of this project is to evaluate what wells are showing geothermal potent
 
 ### The Dataset 
 We were provided with relevant oil and gas well data from two basins:  Duvernay in Alberta, Canada and Eaglebine in Texas, USA. An overview of the data is provided below: 
-..* **True Temperature Train:** True Temperature data at multiple depths provided by data vendors derived using their proprietary methods. The prediction output (y variable) is the true temperature at bottom hole depth of the well. 
-..* **Static Temperature logs:** Actual static formation temperatures for some wells recorded at bottom hole. In cases where this is available, this will be the prediction output (y variable). 
-..* **Formation Tops:** Geologic formations and their Subsea depth for a particular well.  
-..* **Well Headers:** Meta data related to the most important parameters of the wells including surface/bottom hole Latitude/Longitude, elevation, and total depths (TD). 
-..* **Production Summary:** Production parameters related to a well including first production dates, total and maximum production (Oil/Gas/Water). 
-..* **Mud Image Log:** Mud log files in TIF digital format. 
-..* **Well Log files:** Digitalized well logs for each well in LAS format. Common well logs in each file are Gamma ray, Neutron Porosity, Density, etc.  
-..* **DST Temperature and Pressure (Duvernay only):** Temperature and pressure measurements taken with Drill Stem Tests (DST) while drilling. This includes metadata related to the DST.  
-..* **BHT TSC (Eaglebine only):** Bottom hole temperatures (BHT) plus Time Since Circulation information (TSC, elapsed time since last circulation before temperature was measured). 
-..* **Casing & Production Summary (Eaglebine only):** Minimum casing size, completion and spud dates and cumulative oil/gas/water volumes. 
-..* **Mud Weights (Eaglebine only):** Depths and mud weights in pounds per gallon (ppg). 
+  * **True Temperature Train:** True Temperature data at multiple depths provided by data vendors derived using their proprietary methods. The prediction output (y variable) is the true temperature at bottom hole depth of the well. 
+  * **Static Temperature logs:** Actual static formation temperatures for some wells recorded at bottom hole. In cases where this is available, this will be the prediction output (y variable). 
+  * **Formation Tops:** Geologic formations and their Subsea depth for a particular well.  
+  * **Well Headers:** Meta data related to the most important parameters of the wells including surface/bottom hole Latitude/Longitude, elevation, and total depths (TD). 
+  * **Production Summary:** Production parameters related to a well including first production dates, total and maximum production (Oil/Gas/Water). 
+  * **Mud Image Log:** Mud log files in TIF digital format. 
+  * **Well Log files:** Digitalized well logs for each well in LAS format. Common well logs in each file are Gamma ray, Neutron Porosity, Density, etc.  
+  * **DST Temperature and Pressure (Duvernay only):** Temperature and pressure measurements taken with Drill Stem Tests (DST) while drilling. This includes metadata related to the DST.  
+  * **BHT TSC (Eaglebine only):** Bottom hole temperatures (BHT) plus Time Since Circulation information (TSC, elapsed time since last circulation before temperature was measured). 
+  * **Casing & Production Summary (Eaglebine only):** Minimum casing size, completion and spud dates and cumulative oil/gas/water volumes. 
+  * **Mud Weights (Eaglebine only):** Depths and mud weights in pounds per gallon (ppg). 
 
 <details>
   <summary>Click to expand full data dictionary</summary>
+
 Number | Basin | File name | Field name | Definition | Description
 ---- | ---- | ---- | ---- | ----
 1 | Duverney | Duvernay DST Pressures SPE May 2 2021 | Well ID | Unique ID of well
