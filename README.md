@@ -8,11 +8,11 @@ Technologies to extract geothermal power include (Figure 1):
   * **Binary cycle plants:** Transfer the heat from geothermal hot water to another liquid. The heat causes the second liquid to turn to steam, which is used to drive a generator turbine. 
 
 ![image info](images/power-plant-types.png)  
-
-*Figure 1:  Three types of geothermal power technologies (reference#4)*
+*Figure 1:  Three types of geothermal power technologies [link]: https://www.fuergy.com/media/pages/blog/geothermal-energy-the-clean-renewable-energy-hidden-inside-our-planet/3414410348-1594333627/power-plant-types.png*
 
 All these methods require that multiple boreholes be drilled into the earth to access the heat reservoir. A power plant must have production wells to bring the hot fluid (steam or hot water) to the surface and injection wells to pump the liquid back into the reservoir after it has passed through the power plant. Capital costs are significant with drilling costs accounting for over half the costs. In total, electrical plant construction and well drilling cost about $2.5–6 million USD per MW of electrical capacity. For lower temperatures, geothermal energy can range from residential heat/cooling to industrial processes (Figure 2) 
 
+![image info](images/Geothermal_energy_uses.jpg) 
 *Figure 2:  Geothermal energy uses (from Joseph Battir, GTX2021 presentation)*
 
 With drilling costs being such a factor, there is strong interest in oil and gas wells for re-purposing into a source of geothermal energy. The benefits are cost reduction, reducing the surface infrastructure by repurposing already existing, and conversion from high CO2 to low CO2 energy source. 
