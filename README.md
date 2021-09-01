@@ -7,7 +7,7 @@ Technologies to extract geothermal power include (Figure 1):
   * **Flash steam plants:** Take high-pressure hot water from deep inside the earth and convert it to steam to drive generator turbines. When the steam cools, it condenses to water and is injected back into the ground to be used again. 
   * **Binary cycle plants:** Transfer the heat from geothermal hot water to another liquid. The heat causes the second liquid to turn to steam, which is used to drive a generator turbine. 
 
-![image info](./images/power-plant-types.png)  
+![image info](images\power-plant-types.png)  
 
 *Figure 1:  Three types of geothermal power technologies (reference#4)*
 
