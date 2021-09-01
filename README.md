@@ -22,6 +22,8 @@ All these methods require that multiple boreholes be drilled into the earth to a
 
 With drilling costs being such a factor, there is strong interest in re-purposing oil and gas wells into a source of geothermal energy. The benefits are cost reduction, reducing the surface infrastructure by repurposing already existing, and conversion from high CO2 to low CO2 energy source. 
 
+<details>
+
 ### Datathon Preparation: 
 This datathon was organized to crowd source solutions to the challenge of re-purposing oil & gas wells for geothermal power. In preparation for the datathon a series of webinars were offered to help with understanding the geothermal problem and the tools necessary for a machine learning solution. These included: 
   * Geothermal 101 
