@@ -1,8 +1,8 @@
 ### Geothermal Energy
-Geothermal is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
+[Geothermal Energy](https://www.geothermal-energy.org/explore/what-is-geothermal/) is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
 For centuries, geothermal springs have been used for bathing, heating, and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with enormous potential. Geothermal energy is now used to produce electricity (Figure 1), heat and cool buildings as well as other industrial purposes like fruit and vegetable cultivation (Figure 2).  
-Geothermal power (electrical power generated from geothermal energy) is considered a sustainable and renewable source of energy because the heat extraction is minor compared with the earth's heat content. Internal thermal energy from the earth flows to the surface by conduction at a rate of 44.2 terawatts (TW) and is replenished by radioactive decay of minerals at a rate of 30 TW. Compared to the world’s total energy consumption of 13 TWY, geothermal power could supply the world’s energy needs however, most of this energy flow is not recoverable 
-Technologies to extract geothermal power include (Figure 1): 
+Geothermal power (electrical power generated from geothermal energy) is considered a sustainable and renewable source of energy because the heat extraction is minor compared with the earth's heat content. Internal thermal energy from the earth flows to the surface by conduction at a rate of 44.2 terawatts (TW) and is replenished by radioactive decay of minerals at a rate of 30 TW. Compared to the world’s total energy consumption of 13 TWY, geothermal power could supply the world’s energy needs however, most of this energy flow is not recoverable.  
+[Technologies to extract geothermal power](https://www.eia.gov/energyexplained/geothermal/geothermal-power-plants.php) include (Figure 1): 
   * **Dry steam plants:** Use steam directly from a geothermal reservoir to turn generator turbines. 
   * **Flash steam plants:** Take high-pressure hot water from deep inside the earth and convert it to steam to drive generator turbines. When the steam cools, it condenses to water and is injected back into the ground to be used again. 
   * **Binary cycle plants:** Transfer the heat from geothermal hot water to another liquid. The heat causes the second liquid to turn to steam, which is used to drive a generator turbine. 
@@ -10,14 +10,12 @@ Technologies to extract geothermal power include (Figure 1):
 ![image info](images/power-plant-types.png)  
 *Figure 1:  [Three types of geothermal power technologies](https://www.fuergy.com/media/pages/blog/geothermal-energy-the-clean-renewable-energy-hidden-inside-our-planet/3414410348-1594333627/power-plant-types.png)*
 
-All these methods require that multiple boreholes be drilled into the earth to access the heat reservoir. A power plant must have production wells to bring the hot fluid (steam or hot water) to the surface and injection wells to pump the liquid back into the reservoir after it has passed through the power plant. Capital costs are significant with drilling costs accounting for over half the costs. In total, electrical plant construction and well drilling cost about $2.5–6 million USD per MW of electrical capacity. For lower temperatures, geothermal energy can range from residential heat/cooling to industrial processes (Figure 2) 
+All these methods require that multiple boreholes be drilled into the earth to access the heat reservoir. A power plant must have production wells to bring the hot fluid (steam or hot water) to the surface and injection wells to pump the liquid back into the reservoir after it has passed through the power plant. Capital costs are significant with drilling costs accounting for over half the costs. In total, electrical plant construction and well drilling cost about [$2.5–6 million USD per MW of electrical capacity](https://en.wikipedia.org/wiki/Geothermal_energy#Economics). For lower temperatures, geothermal energy can range from residential heat/cooling to industrial processes (Figure 2) 
 
 ![image info](images/Geothermal_energy_uses.jpg)  
 *Figure 2:  Geothermal Energy Uses (from Joseph Battir, GTX2021 presentation)*
 
 With drilling costs being such a factor, there is strong interest in oil and gas wells for re-purposing into a source of geothermal energy. The benefits are cost reduction, reducing the surface infrastructure by repurposing already existing, and conversion from high CO2 to low CO2 energy source. 
-
-~~References~~
 
 ### Datathon Preparation: 
 This datathon was organized to crowd source solutions to the challenge of re-purposing oil & gas wells for geothermal power. In preparation for the datathon a series of webinars were offered to help with understanding the geothermal problem and the tools necessary for a machine learning solution. These included: 
