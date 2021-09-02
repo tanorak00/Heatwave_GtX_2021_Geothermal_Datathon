@@ -8,14 +8,13 @@ The challenge for this event was two fold. Given data from O&G wells,
 
 ## Table of Contents  
 [Background Information](#background-information)  
-[Data & Software](#data-and-software)  
+[Data and Software](#data-and-software)  
     
 <a name="headers"/>
 
 ## Background Information
 
 <details>
-<summary> </summary>
 
 ### Geothermal Energy
 [Geothermal Energy](https://en.wikipedia.org/wiki/Geothermal_energy) is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
@@ -60,7 +59,6 @@ Two parameters are important in the evaluation of geothermal potential in oil an
 ## Data and Software
 
 <details>
-<summary> </summary>
 
 ### The Dataset 
 We were provided with relevant oil and gas well data from two basins:  Duvernay in Alberta, Canada and Eaglebine in Texas, USA. An overview of the data is provided below: 
