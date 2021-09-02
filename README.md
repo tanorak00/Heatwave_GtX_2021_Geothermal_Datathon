@@ -13,12 +13,12 @@ Geothermal power (electrical power generated from geothermal energy) is consider
   * **Binary cycle plants:** Transfer the heat from geothermal hot water to another liquid. The heat causes the second liquid to turn to steam, which is used to drive a generator turbine. 
 
 ![image info](images/power-plant-types.png)  
-*Figure 1:  [Three types of geothermal power technologies](https://www.fuergy.com/media/pages/blog/geothermal-energy-the-clean-renewable-energy-hidden-inside-our-planet/3414410348-1594333627/power-plant-types.png)*
+*Figure 1: [Three types of geothermal power technologies](https://www.fuergy.com/media/pages/blog/geothermal-energy-the-clean-renewable-energy-hidden-inside-our-planet/3414410348-1594333627/power-plant-types.png)*
 
 All these methods require that multiple boreholes be drilled into the earth to access the heat reservoir. A power plant must have production wells to bring the hot fluid (steam or hot water) to the surface and injection wells to pump the liquid back into the reservoir after it has passed through the power plant. [Capital costs](https://en.wikipedia.org/wiki/Geothermal_energy#Economics) are significant with drilling costs accounting for over half the costs. In total, electrical plant construction and well drilling cost about $2.5–6 million USD per MW of electrical capacity. For lower temperatures, geothermal energy can range from residential heat/cooling to industrial processes (Figure 2) 
 
 ![image info](images/Geothermal_energy_uses.jpg)  
-*Figure 2:  Geothermal Energy Uses (from Joseph Battir, GTX2021 presentation)*
+*Figure 2: Geothermal Energy Uses (from Joseph Battir, GTX2021 presentation)*
 
 With drilling costs being such a factor, there is strong interest in re-purposing oil and gas wells into a source of geothermal energy. The benefits are cost reduction, reducing the surface infrastructure by repurposing already existing, and conversion from high CO2 to low CO2 energy source. 
 </details>
@@ -258,7 +258,7 @@ Number | Basin | File name | Field name | Definition / Description
 201 | Eaglebine | SPE Eaglebine production summary April 20 2021 | Gas Injection Cum (mcf)    | Cumulative gas injected into the well at the time of reporting this data
 </details>
 
-#### Software and Packages 
+### Software and Packages 
   * Python 
   * Pandas 
   * Numpy 
@@ -281,7 +281,35 @@ Since the data was spread across multiple Excel, CSV, LAS and TIF image files, i
   7. Create final dataset with useful features (2.8, 836 rows, 22 columns)
 
 ![image info](images/data_info.png)  
-*Figure 3:  Final dataset (refer to data dictionary for feature details) *
+*Figure 3: Final dataset (refer to data dictionary for feature details)*
 
 ### Exploratory Data Analysis (EDA) 
-Duvernay wells are spread across SW of Alberta from north of Airdrie to north of Slave Lake. Eaglebine wells. Eaglebine wells are spread across central Texas from SE of Waco through San Antonio to the Mexican border. 
+Duvernay wells are spread across SW of Alberta from north of Airdrie to north of Slave Lake. Eaglebine wells. Eaglebine wells are spread across central Texas from SE of Waco through San Antonio to the Mexican border.
+
+![image info](images/duvernay_well_locations.png)  
+*Figure 4: Well location map for Duvernay basin in central Alberta*
+
+![image info](images/eaglebine_well_locations.png)  
+*Figure 5: Well locations for Eaglebine basin in Texas.*
+
+The dataset had a total of 836 wells: 512 Duvernay, 324 Eaglebine wells. Several statistical and wrangling methods were performed to better understand the data. Some findings are plotted below (Figure 6, 7, 8).  
+
+![image info](images/duvernay_temperatures.png)  
+*Figure 6: BHT vs Static/True Temperature (depth as hue): __Duvernay__*
+
+![image info](images/eaglebine_temperatures.png)  
+*Figure 6: BHT vs Static/True Temperature (depth as hue): __Eaglebine__*
+
+![image info](images/missing_values.png)  
+*Figure 8: Dataset Missing Features. Gaps in the plot shows missing values per well (y-axis = index of wells). Summary in top right corner are total numbers and percentages.*
+
+The data preparation, cleaning, and EDA process was as follows:  
+  1. Import and flatten the LAS files. Manually sort the 795 different mnemonics (wireline log name) and reduced to <10 basic log types (Neutron, Density, Sonic, Gamma Ray, Resistivity, Borehole). In addition, two LAS files for each well were provided which had to be evaluated to determine which one to use or if they required merging. 
+  2. Wireline log data was handled as per the figure below. The consolidated LAS data from the above step still had missing data. We developed a system to fill in that data gaps (see figure below) using the reduced log types and averaging over a depth interval from TD. 
+  3. Build lithology isopach and thermal conductivity model using the gross lithology data provided and their published thermal conductivity values.  
+  4. Perform EDA and data clean of the general dataset. This included reconciling numerous TD values (total depth) from various source, determining the GL (ground level) was invalid since it should always be less than KB (kelly bushing; Figure 9) – TD (multiple, deviated vs vertical), determining each basin did not have the exact same key data types for some of the geothermal calculations (e.g., Horner extrapolation from DST). Fixed UWI (unique well identifier) errors in the Eaglebine basin. Identified problematic data like ‘completion date’ post-dating the last production date.  
+  5. Identified outliers and errors in the dataset and individually assessed their validity.  
+  6. Extracted new features like the surface temperature (from the LAS file) and time since circulation (from DST information) to assist in temperature and thermal gradient calculation. 
+
+![image info](images/wrangling_process.png)  
+*Figure 9: Graphic display for some of the data wrangling process.*
