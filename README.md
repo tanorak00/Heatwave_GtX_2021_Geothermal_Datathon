@@ -313,3 +313,24 @@ The data preparation, cleaning, and EDA process was as follows:
 
 ![image info](images/wrangling_process.png)  
 *Figure 9: Graphic display for some of the data wrangling process.*
+
+### Feature Selection and Engineering 
+Once the data had been prepared, analysis of the various features for relative importance was performed. A feature importance graph (Figure 10) and correlation matrix to the target, ‘truetemp’ (Figure 11) are provided below and were the basis for feature selection. The steps to selecting input features are as follows: 
+  * Applied regression model to impute missing log values (almost 50% of Bulk density & Neutron porosity values missing), but these features did not improve model so were dropped. 
+  * 26% of True Temperatures values are missing and were dropped since this is the target. 
+  * Instead of removing outlier data, RobustScaler was used to normalize the data. This reduces the impact of outliers.  
+  * Shut in time (time for well to equilibrate to static formation temperature) had minimal effect. 
+  * Features that showed the most impact and correlation:   
+    * BHT (bottomhole temperature) 
+    * BHT Depth (depth of the bottomhole temperature) 
+    * Total Depth (deepest part of wellbore) 
+    * Latitude/Longitude 
+  * Wireline data has model feature importance (Figure 10), but except for bulk density, low correlation to the target (Figure 11). Overall, their inclusion did not improve subsequent models.  
+  * We noticed that the y-coordinate was highly correlated with Bulk density and so substituted it. 
+
+![image info](images/feature_importance.png)  
+*Figure 10: Feature importance plot (importance proportion on X-axis)*
+
+![image info](images/corrplot.png)  
+*Figure 11: Correlation plot of all features vs target (truetemp)*
+
