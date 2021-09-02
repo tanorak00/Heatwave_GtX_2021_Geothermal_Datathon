@@ -280,7 +280,7 @@ Since the data was spread across multiple Excel, CSV, LAS and TIF image files, i
   6. Extract “TSC: like values from DST (2.8) 
   7. Create final dataset with useful features (2.8, 836 rows, 22 columns)
 
-![image info](images/data info.png)  
+![image info](images/data_info.png)  
 *Figure 3:  Final dataset (refer to data dictionary for feature details) *
 
 ### Exploratory Data Analysis (EDA) 
