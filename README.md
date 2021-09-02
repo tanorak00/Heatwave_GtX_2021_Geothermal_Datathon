@@ -31,8 +31,6 @@ The challenge for this event was two fold. Given data from O&G wells,
 
 ## Background Information
 
-<details>
-
 ### Geothermal Energy
 [Geothermal Energy](https://en.wikipedia.org/wiki/Geothermal_energy) is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
 For centuries, [geothermal springs](https://www.geothermal-energy.org/explore/what-is-geothermal/) have been used for bathing, heating, and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with enormous potential. Geothermal energy is now used to produce electricity (Figure 1), heat and cool buildings as well as other industrial purposes like fruit and vegetable cultivation (Figure 2).  
@@ -71,11 +69,7 @@ Two parameters are important in the evaluation of geothermal potential in oil an
 
 **_The challenge_** for this event is to predict borehole bottom hole temperatures (BHT). Models were scored using Mean Absolute Error (MAE). The second part of the challenge is to recommend what wells/areas may be suitable for geothermal power development. The predicted BHT and the provided well information will form that basis of that recommendation.  
 
-</details>
-
 ## Data and Software
-
-<details>
 
 ### The Dataset 
 We were provided with relevant oil and gas well data from two basins:  Duvernay in Alberta, Canada and Eaglebine in Texas, USA. An overview of the data is provided below: 
@@ -92,7 +86,7 @@ We were provided with relevant oil and gas well data from two basins:  Duvernay 
   * **Mud Weights (Eaglebine only):** Depths and mud weights in pounds per gallon (ppg). 
 
 <details>
-  <summary>**_Click to expand full data dictionary_**</summary>
+  <summary>Click to expand full data dictionary</summary>
 
 Number | Basin | File name | Field name | Definition / Description
 ---- | ---- | ---- | ---- | ----
@@ -318,11 +312,7 @@ Since the data was spread across multiple Excel, CSV, LAS and TIF image files, i
 ![image info](images/data_info.png)  
 *Figure 3: Final dataset (refer to data dictionary for feature details)*
 
-</details>
-
 ## Exploratory Data Analysis 
-
-<details>
 
 Duvernay wells are spread across SW of Alberta from north of Airdrie to north of Slave Lake. Eaglebine wells. Eaglebine wells are spread across central Texas from SE of Waco through San Antonio to the Mexican border.
 
@@ -354,11 +344,7 @@ The data preparation, cleaning, and EDA process was as follows:
 ![image info](images/wrangling_process.png)  
 *Figure 9: Graphic display for some of the data wrangling process.*
 
-</details>
-
 ## Modeling
-
-<details>
 
 ### Feature Selection and Engineering 
 Once the data had been prepared, analysis of the various features for relative importance was performed. A feature importance graph (Figure 10) and correlation matrix to the target, ‘truetemp’ (Figure 11) are provided below and were the basis for feature selection. The steps to selecting input features are as follows: 
@@ -389,11 +375,8 @@ Once the data had been prepared, analysis of the various features for relative i
 ![image info](images/model_comparison.png)  
 *Figure 12: Box plot model comparison. Summary in top left corner = mean score and (score standard deviation). Y-axis = negative MAPE.*
 
-</details>
 
 ## Model Results
-
-<details>
 
 ### Model Result 
 The final model selected was Random Forest. I had a combined 5.98 MAE (primary scoring criteria for competition). Individual basins had slightly varied results as shown below (Figure 13)
@@ -413,11 +396,8 @@ Once the temperature prediction from the model was in place, BHT and geothermal 
 ![image info](images/evaluation_critieria.png)  
 *Figure 15: Flow chart for screening prospective geothermal wells.*
 
-</details>
 
 ## Results and Recommendations 
-
-<details>
 
 ### Recommended Wells
 Based on the model and the screening process outlined in the sections above, a concise list of recommended wells was created (figure 16). The Duvernay basin has three wells, all of them heating and wellbore re-entry. The Eaglebine is a mixture of heating and power. These wells could be a mixture of re-entry and new drill. The tables (Figure 17) below include the critical elements for each recommended well such as type of geothermal energy, new drill or re-entry action required, geothermal gradient, estimated costs and proximity to infrastructure or ’energy need’.
@@ -443,4 +423,3 @@ Based on the model and the screening process outlined in the sections above, a c
   * Consider metal extraction (e.g., Lithium) in conjunction with geothermal energy to improve economics. 
   * Consider using different base map layers to better identify ‘energy need’ areas. 
 
-</details>
