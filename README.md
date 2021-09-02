@@ -7,15 +7,26 @@ The challenge for this event was two fold. Given data from O&G wells,
   2. Recommend what wells may be suitable for geothermal power development.
 
 ## Table of Contents  
-  1. [Background Information](#background-information)  
-  2. [Data and Software](#data-and-software)
-  3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
-  4. [Modeling](#modeling)
-  5. [Model Results](#model-results)
+  1. [Background Information](#background-information)
+    a. [Geothermal Energy](#geothermal-energy)   
+    b. [Datathon Preparation](#datathon-preparation)   
+    c. [Problem Statement](#problem-statement)   
+  2. [Data and Software](#data-and-software)  
+    a. [The Dataset](#the-dataset)  
+      * [Data Dictionary](#data-dictionary)  
+    b. [Software and Packages](#software-and-packages)  
+    c. [Import and Organize Data](#impor-and-organize-data)  
+  3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))  
+  4. [Modeling](#modeling)  
+    a. [Feature Selection and Engineering](#feature-selection-and-engineering)  
+    b. [Modeling and Evaluation](#modeling-and-evaluation)  
+  5. [Model Results](#model-results)  
+    a. [Model Result](#model-result)  
+    b. [Model Application](#model-application)  
   6. [Results and Recommendations](#results-and-recommendations)  
-    i. [Recommended Wells](#recommended-wells)  
-    ii. [Insights](#insights)  
-    iii. [Future Recommendations](#future-recommendations)  
+    a. [Recommended Wells](#recommended-wells)  
+    b. [Insights](#insights)  
+    c. [Future Recommendations](#future-recommendations)  
     
 <a name="headers"/>
 
@@ -82,7 +93,7 @@ We were provided with relevant oil and gas well data from two basins:  Duvernay 
   * **Mud Weights (Eaglebine only):** Depths and mud weights in pounds per gallon (ppg). 
 
 <details>
-  <summary>Click to expand full data dictionary</summary>
+  <summary>**_Click to expand full data dictionary_**</summary>
 
 Number | Basin | File name | Field name | Definition / Description
 ---- | ---- | ---- | ---- | ----
