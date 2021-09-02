@@ -13,6 +13,9 @@ The challenge for this event was two fold. Given data from O&G wells,
   4. [Modeling](#modeling)
   5. [Model Results](#model-results)
   6. [Results and Recommendations](#results-and-recommendations)
+    i. [Recommended Wells](#recommended-wells)
+    ii. [Insights](#insights)
+    iii. [Future Recommendations](#future-recommendations)
     
 <a name="headers"/>
 
