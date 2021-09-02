@@ -1,16 +1,23 @@
 
-Geothermal Energy is natural heat of the earth which for centuries was used for bathing, heating, and cooking but is now used to produce electricity , heat/cool buildings and cultivate agricultural produce. Geothermal power is considered a sustainable renewable energy source. All methods to extract this power require drilling multiple boreholes into the earth and cycling fluid through them by a power plant. Drilling accounts for more than half the capital costs, which are already significant. Therefore, there is strong interest to re-purpose already existing oil and gas wells, thereby reducing costs, surface infrastructure and CO2 reductions.
+## Business Case
+Geothermal Energy is natural heat from the earth which for centuries was used for bathing, heating, and cooking but is now used to produce electricity , heat/cool buildings and cultivate agricultural produce. Geothermal power is considered a sustainable renewable energy source. All methods to extract this power require drilling multiple boreholes into the earth and cycling fluid through them by a power plant. Drilling accounts for more than half the capital costs, which are already significant. Therefore, there is strong interest to re-purpose already existing oil and gas wells, thereby reducing costs, surface infrastructure and CO2 reductions.
 
-The challenge for this event was two-fold. Given data from O&G wells,
+The challenge for this event was two fold. Given data from O&G wells,
   1. Predict actual static borehole bottom hole temperatures (BHT).
   2. Recommend what wells may be suitable for geothermal power development.
 
-### Groundwork
+## Table of Contents  
+[Background Information](#background information)  
+[Data & Software](#data & software)  
+...snip...    
+<a name="headers"/>
+
+## Background Information
 
 <details>
   <summary>Show/Hide</summary>
 
-#### Geothermal Energy
+### Geothermal Energy
 [Geothermal Energy](https://en.wikipedia.org/wiki/Geothermal_energy) is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
 For centuries, [geothermal springs](https://www.geothermal-energy.org/explore/what-is-geothermal/) have been used for bathing, heating, and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with enormous potential. Geothermal energy is now used to produce electricity (Figure 1), heat and cool buildings as well as other industrial purposes like fruit and vegetable cultivation (Figure 2).  
 Geothermal power (electrical power generated from geothermal energy) is considered a sustainable and renewable source of energy because the heat extraction is minor compared with the earth's heat content. Internal thermal energy from the earth flows to the surface by conduction at a rate of 44.2 terawatts (TW) and is replenished by radioactive decay of minerals at a rate of 30 TW. Compared to the world’s total energy consumption of 13 TWY, geothermal power could supply the world’s energy needs however, most of this energy flow is not recoverable.  
@@ -29,7 +36,7 @@ All these methods require that multiple boreholes be drilled into the earth to a
 
 With drilling costs being such a factor, there is strong interest in re-purposing oil and gas wells into a source of geothermal energy. The benefits are cost reduction, reducing the surface infrastructure by repurposing already existing, and conversion from high CO2 to low CO2 energy source. 
 
-#### Datathon Preparation: 
+### Datathon Preparation: 
 This datathon was organized to crowd source solutions to the challenge of re-purposing oil & gas wells for geothermal power. In preparation for the datathon a series of webinars were offered to help with understanding the geothermal problem and the tools necessary for a machine learning solution. These included: 
   * Geothermal 101 
   * Data Engineering 
@@ -41,7 +48,7 @@ This datathon was organized to crowd source solutions to the challenge of re-pur
   * Data Management using GIT 
   * Data Story Telling 
 
-#### Problem Statement  
+### Problem Statement  
 Two parameters are important in the evaluation of geothermal potential in oil and gas wells:   
   1. **Formation Temperature:** The higher the temperature at bottom, the higher the potential for Geothermal use. Despite the abundance of techniques for collecting drilling and well operation data, they do not necessarily provide the real Bottom Hole Temperature (BHT).  
   2. **Flow rate:** Flow rate determines the amount of fluid that can flow naturally or be pumped through the formation or pipe. Higher permeability formations or larger diameter pipe are more viable for Geothermal purposes.  
@@ -50,6 +57,7 @@ Two parameters are important in the evaluation of geothermal potential in oil an
 
 </details>
 
+## Data & Software
 ### The Dataset 
 We were provided with relevant oil and gas well data from two basins:  Duvernay in Alberta, Canada and Eaglebine in Texas, USA. An overview of the data is provided below: 
   * **True Temperature Train:** True Temperature data at multiple depths provided by data vendors derived using their proprietary methods. The prediction output (y variable) is the true temperature at bottom hole depth of the well. 
