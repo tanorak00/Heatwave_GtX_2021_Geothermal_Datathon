@@ -2,7 +2,7 @@
 *tl:dr* Geothermal Energy is natural heat of the earth which for centuries was used for bathing, heating, and cooking but is now used to produce electricity , heat/cool buildings and cultivate agricultural produce. Geothermal power is considered a sustainable renewable energy source. All methods to extract this power require drilling multiple boreholes into the earth and cycling fluid through them by a power plant. Drilling accounts for more than half the required capital costs. Therefore, there is strong interest to re-purpose already existing oil and gas wells thereby reducing costs, surface infrastructure and CO2 reductions.
 
 <details>
-  <summary>Expand geothermal energy description</summary>
+  <summary>Click to expand geothermal energy description</summary>
 
 [Geothermal Energy](https://en.wikipedia.org/wiki/Geothermal_energy) is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
 For centuries, [geothermal springs](https://www.geothermal-energy.org/explore/what-is-geothermal/) have been used for bathing, heating, and cooking. But in the early 20th century people started to consider geothermal as a practical source of energy with enormous potential. Geothermal energy is now used to produce electricity (Figure 1), heat and cool buildings as well as other industrial purposes like fruit and vegetable cultivation (Figure 2).  
@@ -21,7 +21,6 @@ All these methods require that multiple boreholes be drilled into the earth to a
 *Figure 2:  Geothermal Energy Uses (from Joseph Battir, GTX2021 presentation)*
 
 With drilling costs being such a factor, there is strong interest in re-purposing oil and gas wells into a source of geothermal energy. The benefits are cost reduction, reducing the surface infrastructure by repurposing already existing, and conversion from high CO2 to low CO2 energy source. 
-
 </details>
 
 ### Datathon Preparation: 
@@ -257,3 +256,32 @@ Number | Basin | File name | Field name | Definition / Description
 199 | Eaglebine | SPE Eaglebine production summary April 20 2021 | Water Maximum Date    | Date the maximum water production was recorded
 200 | Eaglebine | SPE Eaglebine production summary April 20 2021 | Liquid Injection Cum (bbl)    | Cumulative liquid injected into the well at the time of reporting this data
 201 | Eaglebine | SPE Eaglebine production summary April 20 2021 | Gas Injection Cum (mcf)    | Cumulative gas injected into the well at the time of reporting this data
+</details>
+
+#### Software and Packages 
+  * Python 
+  * Pandas 
+  * Numpy 
+  * Matplotlib 
+  * Seaborn 
+  * Lasio 
+  * Welly 
+  * Geopandas 
+  * Power BI 
+  * Tableau 
+
+### Import and Organize Data 
+Since the data was spread across multiple Excel, CSV, LAS and TIF image files, it had to be imported, merged, and organized in multiple steps (Figure 3) 
+  1. All temperature data (2.1-2.3) 
+  2. All well header, mud, formation, and production data (2.4) 
+  3. All LAS logs (2.5) 
+  4. Combine all datasets (2.6, creating 1160 rows, 331 columns) 
+  5. Extract common logs from log data (2.7) 
+  6. Extract “TSC: like values from DST (2.8) 
+  7. Create final dataset with useful features (2.8, 836 rows, 22 columns)
+
+![image info](images/data info.png)  
+*Figure 3:  Final dataset (refer to data dictionary for feature details) *
+
+### Exploratory Data Analysis (EDA) 
+Duvernay wells are spread across SW of Alberta from north of Airdrie to north of Slave Lake. Eaglebine wells. Eaglebine wells are spread across central Texas from SE of Waco through San Antonio to the Mexican border. 
