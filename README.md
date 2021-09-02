@@ -7,8 +7,12 @@ The challenge for this event was two fold. Given data from O&G wells,
   2. Recommend what wells may be suitable for geothermal power development.
 
 ## Table of Contents  
-[Background Information](#background-information)  
-[Data and Software](#data-and-software)  
+  1. [Background Information](#background-information)  
+  2. [Data and Software](#data-and-software)
+  3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
+  4. [Modeling](#modeling)
+  5. [Model Results](#model-results)
+  6. [Results and Recommendations](#results-and-recommendations)
     
 <a name="headers"/>
 
