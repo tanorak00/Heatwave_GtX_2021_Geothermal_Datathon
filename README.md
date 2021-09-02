@@ -15,7 +15,7 @@ The challenge for this event was two fold. Given data from O&G wells,
 ## Background Information
 
 <details>
-  <summary>Show/Hide</summary>
+  <summary></summary>
 
 ### Geothermal Energy
 [Geothermal Energy](https://en.wikipedia.org/wiki/Geothermal_energy) is the natural heat of the Earth derived from the decay of the radioactive elements in the Earth’s crust and transferred to the subsurface by conduction and convection. Temperatures at the core–mantle boundary may reach over 4000 °C (7200 °F) and the crust can get up to 370 °C (700 °F).  
@@ -58,6 +58,10 @@ Two parameters are important in the evaluation of geothermal potential in oil an
 </details>
 
 ## Data & Software
+
+<details>
+  <summary></summary>
+
 ### The Dataset 
 We were provided with relevant oil and gas well data from two basins:  Duvernay in Alberta, Canada and Eaglebine in Texas, USA. An overview of the data is provided below: 
   * **True Temperature Train:** True Temperature data at multiple depths provided by data vendors derived using their proprietary methods. The prediction output (y variable) is the true temperature at bottom hole depth of the well. 
@@ -298,6 +302,8 @@ Since the data was spread across multiple Excel, CSV, LAS and TIF image files, i
 
 ![image info](images/data_info.png)  
 *Figure 3: Final dataset (refer to data dictionary for feature details)*
+
+</details>
 
 ### Exploratory Data Analysis (EDA) 
 Duvernay wells are spread across SW of Alberta from north of Airdrie to north of Slave Lake. Eaglebine wells. Eaglebine wells are spread across central Texas from SE of Waco through San Antonio to the Mexican border.
