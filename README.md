@@ -334,3 +334,53 @@ Once the data had been prepared, analysis of the various features for relative i
 ![image info](images/corrplot.png)  
 *Figure 11: Correlation plot of all features vs target (truetemp)*
 
+### Modelling and Evaluation 
+  * Multiple regression models were k-fold tested to determine the best for use. Models were scored with Negative Mean Absolute Percentage Error (the lower the better). Random Forest model scored the best as seen in the plot below. 
+  * Built a neural network model (CNN) but it did not perform as well and was discarded for future analysis. 
+  * We also attempted to ensemble a Kriging model (a spatial interpolation model) with Random Forest, but that did not perform as well. 
+  * Supervised Learning models appear to perform best and are summarized below (Figure 12)
+
+![image info](images/model_comparison.png)  
+*Figure 12: Box plot model comparison. Summary in top left corner = mean score and (score standard deviation). Y-axis = negative MAPE.*
+
+### Model Results 
+The final model selected was Random Forest. I had a combined 5.98 MAE (primary scoring criteria for competition). Individual basins had slightly varied results as shown below (Figure 13)
+
+![image info](images/actual_vs_predicted.png)  
+*Figure 13: Predicted vs Real BHT plot for Eaglebine and Duvernay basins. Note the difference between the two basins with respect to MAE and RMSE.*
+
+### Model Application 
+Once the temperature prediction from the model was in place, BHT and geothermal gradients (Figure 14) were predicted for all wells in the Duvernay and Eaglebine basin. With that information in place, geothermal potential could be evaluated for all wells. Our approach was to view the problem from an operating company that is looking for investment opportunities, but with limited capital. The process to create a concise list of quality geothermal candidates is as follows: 
+  * Interpret results and create a brief list of action items for heating and power generation using a screening process of (see Figure 15, casing size, production volume, absolute temperature, etc.) 
+  * Plot results on a map using QGIS (v3.14) with ‘OpenStreetMap’ as base layer to identify wells proximal to an ‘energy need’ (i.e., community OR power station/grid). 
+  * Final presentation of results and, if any, recommended actions to take. We chose to only provide a handful of recommended wells, power and heat/cool in Eaglebine, and heating in Duvernay. With limited capital, narrowing the list allows the company to focus on just those with the highest potential.
+
+![image info](images/geothermal_gradients.png)  
+*Figure 14: Comparison of geothermal gradient for all wells in Eaglebine and Duvernay basins.*
+
+![image info](images/evaluation_critieria.png)  
+*Figure 15: Flow chart for screening prospective geothermal wells.*
+
+### Results and Recommendations 
+Based on the model and the screening process outlined in the sections above, a concise list of recommended wells was created (figure 16). The Duvernay basin has three wells, all of them heating and wellbore re-entry. The Eaglebine is a mixture of heating and power. These wells could be a mixture of re-entry and new drill. The tables (Figure 17) below include the critical elements for each recommended well such as type of geothermal energy, new drill or re-entry action required, geothermal gradient, estimated costs and proximity to infrastructure or ’energy need’.
+
+![image info](images/recommendation_map.png)  
+*Figure 16:  Map of recommended prospective geothermal wells.*
+
+![image info](images/recommendation_table1.png)
+![image info](images/recommendation_table2.png)  
+*Figure 17: Table listed recommended wells with key features for each recommendation including the geothermal energy type.*
+
+### Insights 
+  * Average Thermal Gradient of 25.5C/km & 32C/km for Duvernay and Eaglebine respectively, put both basins as prospective for geothermal energy, but Eaglebine would be at the low end for power generation and Duvernay is primarily heating.  
+  * Geothermal energy requires high volumes of flow, therefore, casing size, well capacity and age are big factors on repurposing oil and gas wells.  
+  * Abundant wellbores provide a potential advantage over most other basins, but most wells in these basins do not satisfy all or most of the above criteria such as casing diameter, expected flow rate. 
+  * Industrial scale heating/cooling is the primary recommendation for the Duvernay basin. There are many suitable wellbores available to reduce the cost, but most of those wells did not appear to be sufficiently close to the ‘energy need.’ 
+  * Modelling suggests BHT appeared to be highly correlated to bulk density and neutron porosity. 
+
+### Recommendations 
+  * Acquire cost analysis on grid connection for power plants & geothermal surface facilities 
+  * Since bulk density and neutron porosity correlate to BHT, a detailed geologic/petrophysical model using core and wireline data should be created for the machine learning model. 
+  * Investigate the logistics & economics of co-producing hot water & natural gas/oil to improve the value chain. 
+  * Consider metal extraction (e.g., Lithium) in conjunction with geothermal energy to improve economics. 
+  * Consider using different base map layers to better identify ‘energy need’ areas. 
