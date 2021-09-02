@@ -7,16 +7,15 @@ The challenge for this event was two fold. Given data from O&G wells,
   2. Recommend what wells may be suitable for geothermal power development.
 
 ## Table of Contents  
-  1. [Background Information](#background-information)
+  1. [Background Information](#background-information)  
     a. [Geothermal Energy](#geothermal-energy)   
     b. [Datathon Preparation](#datathon-preparation)   
     c. [Problem Statement](#problem-statement)   
   2. [Data and Software](#data-and-software)  
-    a. [The Dataset](#the-dataset)  
-      * [Data Dictionary](#data-dictionary)  
+    a. [The Dataset](#the-dataset)    
     b. [Software and Packages](#software-and-packages)  
-    c. [Import and Organize Data](#impor-and-organize-data)  
-  3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))  
+    c. [Import and Organize Data](#import-and-organize-data)  
+  3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)  
   4. [Modeling](#modeling)  
     a. [Feature Selection and Engineering](#feature-selection-and-engineering)  
     b. [Modeling and Evaluation](#modeling-and-evaluation)  
@@ -321,7 +320,7 @@ Since the data was spread across multiple Excel, CSV, LAS and TIF image files, i
 
 </details>
 
-## Exploratory Data Analysis (EDA) 
+## Exploratory Data Analysis 
 
 <details>
 
