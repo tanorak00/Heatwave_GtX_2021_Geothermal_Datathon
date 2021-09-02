@@ -8,8 +8,8 @@ The challenge for this event was two fold. Given data from O&G wells,
 
 ## Table of Contents  
 [Background Information](#background-information)  
-[Data & Software](#data-&-software)  
-...snip...    
+[Data & Software](#data-and-software)  
+    
 <a name="headers"/>
 
 ## Background Information
@@ -57,7 +57,7 @@ Two parameters are important in the evaluation of geothermal potential in oil an
 
 </details>
 
-## Data & Software
+## Data and Software
 
 <details>
 <summary> </summary>
