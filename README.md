@@ -368,7 +368,7 @@ Once the data had been prepared, analysis of the various features for relative i
 
 ### Modeling and Evaluation 
   * Multiple regression models were k-fold tested to determine the best for use. Models were scored with Negative Mean Absolute Percentage Error (the lower the better). Random Forest model scored the best as seen in the plot below. 
-  * Built a neural network model (CNN) but it did not perform as well and was discarded for future analysis. 
+  * Built a convolutional neural network (CNN) model and tested varying the number of hidden layers. The model ended up overfitting the test data and was discarded for future analysis. 
   * We also attempted to ensemble a Kriging model (a spatial interpolation model) with Random Forest, but that did not perform as well. 
   * Supervised Learning models appear to perform best and are summarized below (Figure 12)
 
