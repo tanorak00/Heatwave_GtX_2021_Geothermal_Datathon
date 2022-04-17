@@ -414,7 +414,7 @@ Based on the model and the screening process outlined in the sections above, a c
   * Geothermal energy requires high volumes of flow, therefore, casing size, well capacity and age are big factors on repurposing oil and gas wells.  
   * Abundant wellbores provide a potential advantage over most other basins, but most wells in these basins do not satisfy all or most of the above criteria such as casing diameter, expected flow rate. 
   * Industrial scale heating/cooling is the primary recommendation for the Duvernay basin. There are many suitable wellbores available to reduce the cost, but most of those wells did not appear to be sufficiently close to the ‘energy need.’ 
-  * Modelling suggests BHT appeared to be highly correlated to bulk density and neutron porosity. 
+  * Modelling suggests BHT appeared to be inversely correlated to bulk density and neutron porosity. 
 
 ### Future Recommendations 
   * Acquire cost analysis on grid connection for power plants & geothermal surface facilities 
